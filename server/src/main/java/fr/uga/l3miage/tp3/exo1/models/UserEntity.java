@@ -1,6 +1,7 @@
 package fr.uga.l3miage.tp3.exo1.models;
 
 import lombok.*;
+import org.apache.catalina.User;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -24,4 +25,6 @@ public class UserEntity {
     @OneToMany
     @JoinColumn(name = "name")
     private Set<PlaylistEntity> playlistEntities;
+
+
 }

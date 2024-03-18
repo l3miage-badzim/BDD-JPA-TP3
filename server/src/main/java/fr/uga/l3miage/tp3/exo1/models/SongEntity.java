@@ -1,11 +1,18 @@
 package fr.uga.l3miage.tp3.exo1.models;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import java.time.Duration;
 
 @Entity
+@Getter
+@Setter
 public class SongEntity {
     @Id
     private String title;
